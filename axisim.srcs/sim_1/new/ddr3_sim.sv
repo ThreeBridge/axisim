@@ -38,23 +38,28 @@
 
 module ddr3_sim;
 
-    `include "4096Mb_ddr3_parameters.vh"
+//`define SKIP_CALIB
 
+    parameter SIM_BYPASS_INIT_CAL = "FAST";
+
+    `include "4096Mb_ddr3_parameters.vh"
+    //512MB相当
+    
     // ports
-    reg                         rst_n;
+    wire                        rst_n;
     wire                        ck;
     wire                        ck_n = ~ck;
-    reg                         cke;
-    reg                         cs_n;
-    reg                         ras_n;
-    reg                         cas_n;
-    reg                         we_n;
-    reg           [BA_BITS-1:0] ba;
-    reg         [ADDR_BITS-1:0] a;
+    wire                         cke;
+    //reg                         cs_n;
+    wire                        ras_n;
+    wire                         cas_n;
+    wire                         we_n;
+    wire           [BA_BITS-1:0] ba;
+    wire         [ADDR_BITS-1:0] a;
     wire          [DM_BITS-1:0] dm;
     wire          [DQ_BITS-1:0] dq;
-    wire          [DQ_BITS-1:0] dq0;
-    wire          [DQ_BITS-1:0] dq1;
+    //wire          [DQ_BITS-1:0] dq0;
+    //wire          [DQ_BITS-1:0] dq1;
     wire         [DQS_BITS-1:0] dqs;
     wire         [DQS_BITS-1:0] dqs_n;
     wire         [DQS_BITS-1:0] tdqs_n;
@@ -73,28 +78,28 @@ module ddr3_sim;
     wire                  [4:0] wl       = cwl + al;                        //Write Latency
 
     // dq transmit
-    reg                         dq_en;
-    reg           [DM_BITS-1:0] dm_out;
-    reg           [DQ_BITS-1:0] dq_out;
-    reg                         dqs_en;
-    reg          [DQS_BITS-1:0] dqs_out;
-    assign                      dm       = dq_en ? dm_out : {DM_BITS{1'bz}};
-    assign                      dq0      = dq_en ? dq_out : {DQ_BITS{1'bz}};
-    assign                      dq1      = dq_en ? ~dq_out : {DQ_BITS{1'bz}};
-    assign                      dqs      = dqs_en ? dqs_out : {DQS_BITS{1'bz}};
-    assign                      dqs_n    = dqs_en ? ~dqs_out : {DQS_BITS{1'bz}};
+    //reg                         dq_en;
+    //reg           [DM_BITS-1:0] dm_out;
+    //reg           [DQ_BITS-1:0] dq_out;
+    //reg                         dqs_en;
+    //reg          [DQS_BITS-1:0] dqs_out;
+    //assign                      dm       = dq_en ? dm_out : {DM_BITS{1'bz}};
+    //assign                      dq      = dq_en ? dq_out : {DQ_BITS{1'bz}};
+    //assign                      dq1      = dq_en ? ~dq_out : {DQ_BITS{1'bz}};
+    //assign                      dqs      = dqs_en ? dqs_out : {DQS_BITS{1'bz}};
+   // assign                      dqs_n    = dqs_en ? ~dqs_out : {DQS_BITS{1'bz}};
 
     // dq receive
-    reg           [DM_BITS-1:0] dm_fifo [4*CL_MAX+BL_MAX+2:0];
-    reg           [DQ_BITS-1:0] dq_fifo [4*CL_MAX+BL_MAX+2:0];
+    //reg           [DM_BITS-1:0] dm_fifo [4*CL_MAX+BL_MAX+2:0];
+    //reg           [DQ_BITS-1:0] dq_fifo [4*CL_MAX+BL_MAX+2:0];
     wire          [DQ_BITS-1:0] q0, q1, q2, q3;
     reg                         ptr_rst_n;
     reg                   [1:0] burst_cntr;
 
     // odt
-    reg                         odt_out;
-    reg     [(AL_MAX+CL_MAX):0] odt_fifo;
-    assign                      odt      = odt_out & !odt_fifo[0];
+    //reg                         odt_out;
+    //reg     [(AL_MAX+CL_MAX):0] odt_fifo;
+    //assign                      odt      = odt_out & !odt_fifo[0];
 
     // timing definition in tCK units
     real                        tck;
@@ -145,82 +150,84 @@ module ddr3_sim;
         tck <= ceil(TCK_MIN);
 `endif
         //ck <= 1'b1;
-        odt_fifo <= 0;
+        //odt_fifo <= 0;
     end
 
-    logic sys_clk_i;
+    logic           sys_clk_i;
     
-    logic clk_ref_i;
+    logic           clk_ref_i;
     
-    logic ui_clk;
-    logic ui_clk_sync_rst;
-    logic mmcm_locked;
-    logic aresetn;
-    logic app_sr_req;
-    logic app_ref_req;
-    logic app_zq_req;
-    logic app_sr_active;
-    logic app_ref_ack;
-    logic app_zq_ack;
+    logic           ui_clk;
+    logic           ui_clk_sync_rst;
+    logic           mmcm_locked;
+    logic           aresetn;
+    logic           app_sr_req=1'b0;
+    logic           app_ref_req=1'b0;
+    logic           app_zq_req=1'b0;
+    logic           app_sr_active;
+    logic           app_ref_ack;
+    logic           app_zq_ack;
     
-    logic s_axi_awid;
-    logic s_axi_awaddr;
-    logic s_axi_awlen;
-    logic s_axi_awsize;
-    logic s_axi_awburst;
-    logic s_axi_awlock;
-    logic s_axi_awcache;
-    logic s_axi_awprot;
-    logic s_axi_awqos;
-    logic s_axi_awvalid;
-    logic s_axi_awready;
+    logic [1:0]     s_axi_awid;
+    logic [28:0]    s_axi_awaddr;
+    logic [7:0]     s_axi_awlen;
+    logic [2:0]     s_axi_awsize;
+    logic [1:0]     s_axi_awburst;
+    logic [0:0]     s_axi_awlock;
+    logic [3:0]     s_axi_awcache;
+    logic [2:0]     s_axi_awprot;
+    logic [3:0]     s_axi_awqos;
+    logic           s_axi_awvalid;
+    logic           s_axi_awready;
     
-    logic s_axi_wdata;
-    logic s_axi_wstrb;
-    logic s_axi_wlast;
-    logic s_axi_wvalid;
-    logic s_axi_wready;
+    logic [31:0]    s_axi_wdata;
+    logic [3:0]     s_axi_wstrb;
+    logic           s_axi_wlast;
+    logic           s_axi_wvalid;
+    logic           s_axi_wready;
     
-    logic s_axi_bready;
-    logic s_axi_bid;
-    logic s_axi_bresp;
-    logic s_axi_bvalid;
+    logic           s_axi_bready;
+    logic [1:0]     s_axi_bid;
+    logic [1:0]     s_axi_bresp;
+    logic           s_axi_bvalid;
     
-    logic s_axi_arid;
-    logic s_axi_araddr;
-    logic s_axi_arlen;
-    logic s_axi_arsize;
-    logic s_axi_arburst;
-    logic s_axi_arlock;
-    logic s_axi_arcache;
-    logic s_axi_arprot;
-    logic s_axi_arqos;
-    logic s_axi_arvalid;
-    logic s_axi_arready;
+    logic [1:0]     s_axi_arid;
+    logic [28:0]    s_axi_araddr;
+    logic [7:0]     s_axi_arlen;
+    logic [2:0]     s_axi_arsize;
+    logic [1:0]     s_axi_arburst;
+    logic [0:0]     s_axi_arlock;
+    logic [3:0]     s_axi_arcache;
+    logic [2:0]     s_axi_arprot;
+    logic [3:0]     s_axi_arqos;
+    logic           s_axi_arvalid;
+    logic           s_axi_arready;
     
     logic s_axi_rready;
-    logic s_axi_rid;
-    logic s_axi_rdata;
-    logic s_axi_rresp;
-    logic s_axi_rlast;
-    logic s_axi_rvalid;
-    logic init_calib_complete;
-    logic device_temp;
+    logic [1:0]     s_axi_rid;
+    logic [31:0]    s_axi_rdata;
+    logic [1:0]     s_axi_rresp;
+    logic           s_axi_rlast;
+    logic           s_axi_rvalid;
+    logic           init_calib_complete;
+    logic [11:0]    device_temp;
     
-    `ifdef
-        logic calib_tap_req;
-        logic calib_tap_load;
-        logic calib_tap_addr;
-        logic calib_tap_val;
-        logic calib_tap_load_done;
+    `ifdef SKIP_CALIB
+        logic       calib_tap_req;
+        logic       calib_tap_load;
+        logic [6:0] calib_tap_addr;
+        logic [7:0] calib_tap_val;
+        logic       calib_tap_load_done;
     `endif
     
     logic sys_rst;
     
+    reg [63:0] memo;
+    reg [31:0] wrdata_buf [15:0];
 
     mig_7series_0 mig_7series_0(
         // Inouts
-        .ddr3_dq        (dq0),
+        .ddr3_dq        (dq),
         .ddr3_dqs_n     (dqs_n),
         .ddr3_dqs_p     (dqs),
         // Outputs
@@ -308,25 +315,25 @@ module ddr3_sim;
 
     // component instantiation
     ddr3_den4096Mb sdramddr3_0 (
-        rst_n,
-        ck, 
-        ck_n,
-        cke, 
-        cs_n,       // コントロールしない
-        ras_n, 
-        cas_n, 
-        we_n, 
-        dm, 
-        ba, 
-        a, 
-        dq0, 
-        dqs,
-        dqs_n,
-        tdqs_n,     // 未使用
-        odt
+        .rst_n(rst_n),
+        .ck(ck), 
+        .ck_n(ck_n),
+        .cke(cke), 
+        .cs_n(1'b0),       // コントロールしない
+        .ras_n(ras_n), 
+        .cas_n(cas_n), 
+        .we_n(we_n), 
+        .dm_tdqs(dm), 
+        .ba(ba), 
+        .addr(a), 
+        .dq(dq), 
+        .dqs(dqs),
+        .dqs_n(dqs_n),
+        .tdqs_n(tdqs_n),     // 未使用
+        .odt(odt)
     );
 
-    assign cs_n = 1'b0;
+    //assign cs_n = 1'b0;
 
     // clock generator
     initial begin
@@ -345,9 +352,182 @@ module ddr3_sim;
     
     initial begin
         aresetn = 1;
-        #400000 aresetn = 0;
+        #2000000 aresetn = 0;
         #400000 aresetn = 1;
     end
+    
+    
+    initial begin
+        memo = "init";
+        init_signal();
+        #110000000;// wait calib complete 110us
+        memo = "write";
+        /*---WRITE Transaction---*/
+        /*--Write Address Port--*/
+        repeat(2)
+        @(posedge sys_clk_i)begin
+            s_axi_awvalid   = 1'b1;
+            s_axi_awaddr    = 29'b0;
+            s_axi_awlen     = 8'h03;
+            s_axi_awsize    = 3'b010;
+            s_axi_awburst   = 2'b01;
+            s_axi_awlock    = 2'b0;
+            s_axi_awcache   = 4'b0011;
+            s_axi_awprot    = 3'b0;
+            s_axi_awid      = 0;
+            s_axi_awqos     = 4'b0;
+            //write_data(32'h00_01_02_03,1'b0);
+        end
+        
+        @(posedge sys_clk_i)begin
+            s_axi_awvalid = 1'b0;
+        end
+        /*--Write Data Port--*/
+        write_data(32'h00_01_02_03,1'b0);
+        write_data(32'h04_05_06_07,1'b0);
+        write_data(32'h08_09_0A_0B,1'b0);
+        write_data(32'h0C_0D_0E_0F,1'b1);
+        @(posedge sys_clk_i)begin
+            s_axi_wvalid    = 1'b0;
+            s_axi_wlast     = 1'b0;
+        end
+        @(posedge sys_clk_i)begin
+            if(s_axi_bvalid&&!s_axi_bresp)s_axi_bready = 1'b0;
+        end
+        
+        memo = "read";
+        /*---READ Transaction---*/
+        /*--Read Address Port--*/
+        repeat(2)
+        @(posedge sys_clk_i)begin
+            s_axi_arvalid   = 1'b1;
+            s_axi_araddr    = 29'b0;
+            s_axi_arlen     = 8'h03;
+            s_axi_arsize    = 3'b010;
+            s_axi_arburst   = 2'b01;
+            s_axi_arlock    = 2'b0;
+            s_axi_arcache   = 4'b0011;
+            s_axi_arprot    = 3'b0;
+            s_axi_arqos     = 4'b0;
+            s_axi_arid      = 0;
+        end
+        @(posedge sys_clk_i)begin
+            s_axi_arvalid   = 1'b0;
+            s_axi_rready    = 1'b1;
+        end
+        
+        repeat(4)
+        @(posedge sys_clk_i) if(s_axi_rlast) s_axi_rready = 1'b0;
+        
+        
+        ///----
+        memo = "write2";
+        wrdata_buf[0] = 32'h11223344;
+        wrdata_buf[1] = 32'h22334455;
+        wrdata_buf[2] = 32'h33445566;
+        wrdata_buf[3] = 32'h44556677;
+        write_burst(29'h7, 4);
+        repeat(100) @(posedge sys_clk_i);
+    end
+    
+    
+    task write_data(input [31:0] data,input last);
+        begin
+            @(posedge sys_clk_i)begin
+                s_axi_wvalid    = 1'b1;
+                s_axi_wdata     = data;
+                s_axi_wstrb     = 4'b1111;
+                s_axi_bready    = 1'b1;
+                if(last) s_axi_wlast = 1'b1;
+                else     s_axi_wlast = 1'b0;
+            end
+        end
+    endtask
+    
+    
+    task init_signal();
+    @(posedge sys_clk_i)begin
+        s_axi_awvalid   = 1'b0;
+        s_axi_awaddr    = 29'b0;
+        s_axi_awlen     = 8'h00;
+        s_axi_awsize    = 3'b000;
+        s_axi_awburst   = 2'b00;
+        s_axi_awlock    = 2'b0;
+        s_axi_awcache   = 4'b0000;
+        s_axi_awprot    = 3'b0;
+        s_axi_awid      = 0;
+        s_axi_awqos     = 4'b0;
+        
+        s_axi_wvalid    = 1'b0;
+        s_axi_wdata     = 32'h00_00_00_00;
+        s_axi_wlast     = 1'b0;
+        s_axi_wstrb     = 4'b0;
+        
+        s_axi_bready    = 1'b0;
+        
+        s_axi_arvalid   = 1'b0;
+        s_axi_araddr    = 29'b0;
+        s_axi_arlen     = 8'h00;
+        s_axi_arsize    = 3'b000;
+        s_axi_arburst   = 2'b00;
+        s_axi_arlock    = 2'b0;
+        s_axi_arcache   = 4'b0000;
+        s_axi_arprot    = 3'b0;
+        s_axi_arqos     = 4'b0;
+        s_axi_arid      = 0;
+        
+        s_axi_rready    = 1'b0;
+    end
+    endtask
+    
+    
+    task write_burst(input [28:0] addr, input integer wlen);
+    //integer wp; //write pointer.
+    integer ii;
+        begin
+            //wp = 0;
+            s_axi_awaddr = addr;
+            s_axi_wvalid = 1'b1;
+            s_axi_wdata = wrdata_buf[0];
+            s_axi_wstrb = 4'hF;
+            
+            @(posedge sys_clk_i) #10; //ps
+            s_axi_awvalid   = 1'b1;
+            //s_axi_awaddr    = 29'b0;
+            s_axi_awlen     = 8'h03;
+            s_axi_awsize    = 3'b010;
+            s_axi_awburst   = 2'b01;
+            s_axi_awlock    = 2'b0;
+            s_axi_awcache   = 4'b0011;
+            s_axi_awprot    = 3'b0;
+            s_axi_awid      = 0;
+            s_axi_awqos     = 4'b0;
+            
+            wait(s_axi_awready) begin //wait for accepted.
+                @(posedge sys_clk_i) #10;
+                s_axi_awvalid = 1'b0;
+            end
+            
+            for(ii=1; ii<wlen; ii=ii+1) begin
+                wait(s_axi_wready==1'b1) begin
+                    @(posedge sys_clk_i) #10;
+                end
+                //wp = wp +1;
+                s_axi_wdata = wrdata_buf[ii];
+                
+                if(ii==wlen-1) begin
+                    s_axi_wlast = 1'b1;
+
+                end  else 
+                    s_axi_wlast = 1'b0;
+            end        
+            @(posedge sys_clk_i) #10;
+            s_axi_wlast = 1'b0;
+            s_axi_wvalid = 1'b0;
+        end
+    endtask
+    
+    
     
     function integer ceil;
         input number;

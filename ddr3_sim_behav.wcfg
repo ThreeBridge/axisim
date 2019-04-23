@@ -1,0 +1,1133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="ddr3_sim_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="ddr3_sim" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="832242707fs"></ZoomStartTime>
+      <ZoomEndTime time="1033551459fs"></ZoomEndTime>
+      <Cursor1Time time="883053500fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="199"></NameColumnWidth>
+      <ValueColumnWidth column_width="114"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="275" />
+   <wave_markers>
+      <marker label="" time="360834845" />
+   </wave_markers>
+   <wvobject type="array" fp_name="/ddr3_sim/TZQCS">
+      <obj_property name="ElementShortName">TZQCS[31:0]</obj_property>
+      <obj_property name="ObjectShortName">TZQCS[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/TZQINIT">
+      <obj_property name="ElementShortName">TZQINIT[31:0]</obj_property>
+      <obj_property name="ObjectShortName">TZQINIT[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/TZQOPER">
+      <obj_property name="ElementShortName">TZQOPER[31:0]</obj_property>
+      <obj_property name="ObjectShortName">TZQOPER[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/ddr3_sim/mmcm_locked">
+      <obj_property name="ElementShortName">mmcm_locked</obj_property>
+      <obj_property name="ObjectShortName">mmcm_locked</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/ddr3_sim/sys_clk_i">
+      <obj_property name="ElementShortName">sys_clk_i</obj_property>
+      <obj_property name="ObjectShortName">sys_clk_i</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/ddr3_sim/clk_ref_i">
+      <obj_property name="ElementShortName">clk_ref_i</obj_property>
+      <obj_property name="ObjectShortName">clk_ref_i</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/ddr3_sim/aresetn">
+      <obj_property name="ElementShortName">aresetn</obj_property>
+      <obj_property name="ObjectShortName">aresetn</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/ddr3_sim/rst_n">
+      <obj_property name="ElementShortName">rst_n</obj_property>
+      <obj_property name="ObjectShortName">rst_n</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider471" type="divider">
+      <obj_property name="label">// ddr3</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/ddr3_sim/sdramddr3_0/rst_n">
+      <obj_property name="ElementShortName">rst_n</obj_property>
+      <obj_property name="ObjectShortName">rst_n</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/ddr3_sim/sdramddr3_0/ck">
+      <obj_property name="ElementShortName">ck</obj_property>
+      <obj_property name="ObjectShortName">ck</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/ddr3_sim/sdramddr3_0/ck_n">
+      <obj_property name="ElementShortName">ck_n</obj_property>
+      <obj_property name="ObjectShortName">ck_n</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/ddr3_sim/sdramddr3_0/cke">
+      <obj_property name="ElementShortName">cke</obj_property>
+      <obj_property name="ObjectShortName">cke</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/ddr3_sim/sdramddr3_0/cs_n">
+      <obj_property name="ElementShortName">cs_n</obj_property>
+      <obj_property name="ObjectShortName">cs_n</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/ddr3_sim/sdramddr3_0/ras_n">
+      <obj_property name="ElementShortName">ras_n</obj_property>
+      <obj_property name="ObjectShortName">ras_n</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/ddr3_sim/sdramddr3_0/cas_n">
+      <obj_property name="ElementShortName">cas_n</obj_property>
+      <obj_property name="ObjectShortName">cas_n</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/ddr3_sim/sdramddr3_0/we_n">
+      <obj_property name="ElementShortName">we_n</obj_property>
+      <obj_property name="ObjectShortName">we_n</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/sdramddr3_0/ba">
+      <obj_property name="ElementShortName">ba[2:0]</obj_property>
+      <obj_property name="ObjectShortName">ba[2:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/sdramddr3_0/addr">
+      <obj_property name="ElementShortName">addr[14:0]</obj_property>
+      <obj_property name="ObjectShortName">addr[14:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/sdramddr3_0/dq">
+      <obj_property name="ElementShortName">dq[15:0]</obj_property>
+      <obj_property name="ObjectShortName">dq[15:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/sdramddr3_0/dqs">
+      <obj_property name="ElementShortName">dqs[1:0]</obj_property>
+      <obj_property name="ObjectShortName">dqs[1:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/sdramddr3_0/dqs_n">
+      <obj_property name="ElementShortName">dqs_n[1:0]</obj_property>
+      <obj_property name="ObjectShortName">dqs_n[1:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/sdramddr3_0/tdqs_n">
+      <obj_property name="ElementShortName">tdqs_n[1:0]</obj_property>
+      <obj_property name="ObjectShortName">tdqs_n[1:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/ddr3_sim/sdramddr3_0/odt">
+      <obj_property name="ElementShortName">odt</obj_property>
+      <obj_property name="ObjectShortName">odt</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/sdramddr3_0/dm_tdqs">
+      <obj_property name="ElementShortName">dm_tdqs[1:0]</obj_property>
+      <obj_property name="ObjectShortName">dm_tdqs[1:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/memo">
+      <obj_property name="ElementShortName">memo[63:0]</obj_property>
+      <obj_property name="ObjectShortName">memo[63:0]</obj_property>
+      <obj_property name="Radix">ASCIIRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider693" type="divider">
+      <obj_property name="label">// --&gt; ddr3</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider711" type="divider">
+      <obj_property name="label">Write Transaction</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/s_axi_awaddr">
+      <obj_property name="ElementShortName">s_axi_awaddr[28:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axi_awaddr[28:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/ddr3_sim/s_axi_awvalid">
+      <obj_property name="ElementShortName">s_axi_awvalid</obj_property>
+      <obj_property name="ObjectShortName">s_axi_awvalid</obj_property>
+      <obj_property name="CustomSignalColor">#FAAFBE</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/ddr3_sim/s_axi_awready">
+      <obj_property name="ElementShortName">s_axi_awready</obj_property>
+      <obj_property name="ObjectShortName">s_axi_awready</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/s_axi_awlen">
+      <obj_property name="ElementShortName">s_axi_awlen[7:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axi_awlen[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/s_axi_awsize">
+      <obj_property name="ElementShortName">s_axi_awsize[2:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axi_awsize[2:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/s_axi_awburst">
+      <obj_property name="ElementShortName">s_axi_awburst[1:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axi_awburst[1:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/s_axi_awid">
+      <obj_property name="ElementShortName">s_axi_awid[1:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axi_awid[1:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/s_axi_awlock">
+      <obj_property name="ElementShortName">s_axi_awlock[0:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axi_awlock[0:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/s_axi_awcache">
+      <obj_property name="ElementShortName">s_axi_awcache[3:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axi_awcache[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/s_axi_awprot">
+      <obj_property name="ElementShortName">s_axi_awprot[2:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axi_awprot[2:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/s_axi_awqos">
+      <obj_property name="ElementShortName">s_axi_awqos[3:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axi_awqos[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/ddr3_sim/s_axi_wvalid">
+      <obj_property name="ElementShortName">s_axi_wvalid</obj_property>
+      <obj_property name="ObjectShortName">s_axi_wvalid</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/s_axi_wdata">
+      <obj_property name="ElementShortName">s_axi_wdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axi_wdata[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/s_axi_wstrb">
+      <obj_property name="ElementShortName">s_axi_wstrb[3:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axi_wstrb[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/ddr3_sim/s_axi_wready">
+      <obj_property name="ElementShortName">s_axi_wready</obj_property>
+      <obj_property name="ObjectShortName">s_axi_wready</obj_property>
+      <obj_property name="CustomSignalColor">#FAAFBE</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/ddr3_sim/s_axi_wlast">
+      <obj_property name="ElementShortName">s_axi_wlast</obj_property>
+      <obj_property name="ObjectShortName">s_axi_wlast</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/s_axi_bresp">
+      <obj_property name="ElementShortName">s_axi_bresp[1:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axi_bresp[1:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/ddr3_sim/s_axi_bvalid">
+      <obj_property name="ElementShortName">s_axi_bvalid</obj_property>
+      <obj_property name="ObjectShortName">s_axi_bvalid</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/ddr3_sim/s_axi_bready">
+      <obj_property name="ElementShortName">s_axi_bready</obj_property>
+      <obj_property name="ObjectShortName">s_axi_bready</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider712" type="divider">
+      <obj_property name="label">--&gt;Write Transaction</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider733" type="divider">
+      <obj_property name="label">Read Transaction</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/s_axi_araddr">
+      <obj_property name="ElementShortName">s_axi_araddr[28:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axi_araddr[28:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/ddr3_sim/s_axi_arvalid">
+      <obj_property name="ElementShortName">s_axi_arvalid</obj_property>
+      <obj_property name="ObjectShortName">s_axi_arvalid</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/s_axi_arlen">
+      <obj_property name="ElementShortName">s_axi_arlen[7:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axi_arlen[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/s_axi_arsize">
+      <obj_property name="ElementShortName">s_axi_arsize[2:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axi_arsize[2:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/s_axi_arburst">
+      <obj_property name="ElementShortName">s_axi_arburst[1:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axi_arburst[1:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/s_axi_arlock">
+      <obj_property name="ElementShortName">s_axi_arlock[0:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axi_arlock[0:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/s_axi_arcache">
+      <obj_property name="ElementShortName">s_axi_arcache[3:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axi_arcache[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/s_axi_arid">
+      <obj_property name="ElementShortName">s_axi_arid[1:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axi_arid[1:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/s_axi_arprot">
+      <obj_property name="ElementShortName">s_axi_arprot[2:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axi_arprot[2:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/s_axi_arqos">
+      <obj_property name="ElementShortName">s_axi_arqos[3:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axi_arqos[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/ddr3_sim/s_axi_arready">
+      <obj_property name="ElementShortName">s_axi_arready</obj_property>
+      <obj_property name="ObjectShortName">s_axi_arready</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/s_axi_rdata">
+      <obj_property name="ElementShortName">s_axi_rdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axi_rdata[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/s_axi_rresp">
+      <obj_property name="ElementShortName">s_axi_rresp[1:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axi_rresp[1:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/ddr3_sim/s_axi_rvalid">
+      <obj_property name="ElementShortName">s_axi_rvalid</obj_property>
+      <obj_property name="ObjectShortName">s_axi_rvalid</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/ddr3_sim/s_axi_rlast">
+      <obj_property name="ElementShortName">s_axi_rlast</obj_property>
+      <obj_property name="ObjectShortName">s_axi_rlast</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/ddr3_sim/s_axi_rready">
+      <obj_property name="ElementShortName">s_axi_rready</obj_property>
+      <obj_property name="ObjectShortName">s_axi_rready</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/s_axi_rid">
+      <obj_property name="ElementShortName">s_axi_rid[1:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axi_rid[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider734" type="divider">
+      <obj_property name="label">--&gt;Read Transaction</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/ddr3_sim/ck_n">
+      <obj_property name="ElementShortName">ck_n</obj_property>
+      <obj_property name="ObjectShortName">ck_n</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/ddr3_sim/ck">
+      <obj_property name="ElementShortName">ck</obj_property>
+      <obj_property name="ObjectShortName">ck</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/ddr3_sim/cke">
+      <obj_property name="ElementShortName">cke</obj_property>
+      <obj_property name="ObjectShortName">cke</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/ddr3_sim/ras_n">
+      <obj_property name="ElementShortName">ras_n</obj_property>
+      <obj_property name="ObjectShortName">ras_n</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/ddr3_sim/cas_n">
+      <obj_property name="ElementShortName">cas_n</obj_property>
+      <obj_property name="ObjectShortName">cas_n</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/ddr3_sim/we_n">
+      <obj_property name="ElementShortName">we_n</obj_property>
+      <obj_property name="ObjectShortName">we_n</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/ddr3_sim/init_calib_complete">
+      <obj_property name="ElementShortName">init_calib_complete</obj_property>
+      <obj_property name="ObjectShortName">init_calib_complete</obj_property>
+      <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/ba">
+      <obj_property name="ElementShortName">ba[2:0]</obj_property>
+      <obj_property name="ObjectShortName">ba[2:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/a">
+      <obj_property name="ElementShortName">a[14:0]</obj_property>
+      <obj_property name="ObjectShortName">a[14:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/dm">
+      <obj_property name="ElementShortName">dm[1:0]</obj_property>
+      <obj_property name="ObjectShortName">dm[1:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/dq">
+      <obj_property name="ElementShortName">dq[15:0]</obj_property>
+      <obj_property name="ObjectShortName">dq[15:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/dqs">
+      <obj_property name="ElementShortName">dqs[1:0]</obj_property>
+      <obj_property name="ObjectShortName">dqs[1:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/dqs_n">
+      <obj_property name="ElementShortName">dqs_n[1:0]</obj_property>
+      <obj_property name="ObjectShortName">dqs_n[1:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/tdqs_n">
+      <obj_property name="ElementShortName">tdqs_n[1:0]</obj_property>
+      <obj_property name="ObjectShortName">tdqs_n[1:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/ddr3_sim/odt">
+      <obj_property name="ElementShortName">odt</obj_property>
+      <obj_property name="ObjectShortName">odt</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/mode_reg0">
+      <obj_property name="ElementShortName">mode_reg0[14:0]</obj_property>
+      <obj_property name="ObjectShortName">mode_reg0[14:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/mode_reg1">
+      <obj_property name="ElementShortName">mode_reg1[14:0]</obj_property>
+      <obj_property name="ObjectShortName">mode_reg1[14:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/mode_reg2">
+      <obj_property name="ElementShortName">mode_reg2[14:0]</obj_property>
+      <obj_property name="ObjectShortName">mode_reg2[14:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/cl">
+      <obj_property name="ElementShortName">cl[3:0]</obj_property>
+      <obj_property name="ObjectShortName">cl[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/ddr3_sim/bo">
+      <obj_property name="ElementShortName">bo</obj_property>
+      <obj_property name="ObjectShortName">bo</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/bl">
+      <obj_property name="ElementShortName">bl[3:0]</obj_property>
+      <obj_property name="ObjectShortName">bl[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/cwl">
+      <obj_property name="ElementShortName">cwl[3:0]</obj_property>
+      <obj_property name="ObjectShortName">cwl[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/al">
+      <obj_property name="ElementShortName">al[3:0]</obj_property>
+      <obj_property name="ObjectShortName">al[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/rl">
+      <obj_property name="ElementShortName">rl[4:0]</obj_property>
+      <obj_property name="ObjectShortName">rl[4:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/wl">
+      <obj_property name="ElementShortName">wl[4:0]</obj_property>
+      <obj_property name="ObjectShortName">wl[4:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/q0">
+      <obj_property name="ElementShortName">q0[15:0]</obj_property>
+      <obj_property name="ObjectShortName">q0[15:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/q1">
+      <obj_property name="ElementShortName">q1[15:0]</obj_property>
+      <obj_property name="ObjectShortName">q1[15:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/q2">
+      <obj_property name="ElementShortName">q2[15:0]</obj_property>
+      <obj_property name="ObjectShortName">q2[15:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/q3">
+      <obj_property name="ElementShortName">q3[15:0]</obj_property>
+      <obj_property name="ObjectShortName">q3[15:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/ddr3_sim/ptr_rst_n">
+      <obj_property name="ElementShortName">ptr_rst_n</obj_property>
+      <obj_property name="ObjectShortName">ptr_rst_n</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/burst_cntr">
+      <obj_property name="ElementShortName">burst_cntr[1:0]</obj_property>
+      <obj_property name="ObjectShortName">burst_cntr[1:0]</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/ddr3_sim/tck">
+      <obj_property name="ElementShortName">tck</obj_property>
+      <obj_property name="ObjectShortName">tck</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/tccd">
+      <obj_property name="ElementShortName">tccd[11:0]</obj_property>
+      <obj_property name="ObjectShortName">tccd[11:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/tcke">
+      <obj_property name="ElementShortName">tcke[11:0]</obj_property>
+      <obj_property name="ObjectShortName">tcke[11:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/tckesr">
+      <obj_property name="ElementShortName">tckesr[11:0]</obj_property>
+      <obj_property name="ObjectShortName">tckesr[11:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/tcksre">
+      <obj_property name="ElementShortName">tcksre[11:0]</obj_property>
+      <obj_property name="ObjectShortName">tcksre[11:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/tcksrx">
+      <obj_property name="ElementShortName">tcksrx[11:0]</obj_property>
+      <obj_property name="ObjectShortName">tcksrx[11:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/tcl_min">
+      <obj_property name="ElementShortName">tcl_min[11:0]</obj_property>
+      <obj_property name="ObjectShortName">tcl_min[11:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/mr_cl">
+      <obj_property name="ElementShortName">mr_cl[6:2]</obj_property>
+      <obj_property name="ObjectShortName">mr_cl[6:2]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/tcpded">
+      <obj_property name="ElementShortName">tcpded[11:0]</obj_property>
+      <obj_property name="ObjectShortName">tcpded[11:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/tcwl_min">
+      <obj_property name="ElementShortName">tcwl_min[11:0]</obj_property>
+      <obj_property name="ObjectShortName">tcwl_min[11:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/mr_cwl">
+      <obj_property name="ElementShortName">mr_cwl[5:3]</obj_property>
+      <obj_property name="ObjectShortName">mr_cwl[5:3]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/tdllk">
+      <obj_property name="ElementShortName">tdllk[11:0]</obj_property>
+      <obj_property name="ObjectShortName">tdllk[11:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/tfaw">
+      <obj_property name="ElementShortName">tfaw[11:0]</obj_property>
+      <obj_property name="ObjectShortName">tfaw[11:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/tmod">
+      <obj_property name="ElementShortName">tmod[11:0]</obj_property>
+      <obj_property name="ObjectShortName">tmod[11:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/tmrd">
+      <obj_property name="ElementShortName">tmrd[11:0]</obj_property>
+      <obj_property name="ObjectShortName">tmrd[11:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/tras">
+      <obj_property name="ElementShortName">tras[11:0]</obj_property>
+      <obj_property name="ObjectShortName">tras[11:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/trc">
+      <obj_property name="ElementShortName">trc[11:0]</obj_property>
+      <obj_property name="ObjectShortName">trc[11:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/trcd">
+      <obj_property name="ElementShortName">trcd[11:0]</obj_property>
+      <obj_property name="ObjectShortName">trcd[11:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/trfc">
+      <obj_property name="ElementShortName">trfc[11:0]</obj_property>
+      <obj_property name="ObjectShortName">trfc[11:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/trp">
+      <obj_property name="ElementShortName">trp[11:0]</obj_property>
+      <obj_property name="ObjectShortName">trp[11:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/trrd">
+      <obj_property name="ElementShortName">trrd[11:0]</obj_property>
+      <obj_property name="ObjectShortName">trrd[11:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/trtp">
+      <obj_property name="ElementShortName">trtp[11:0]</obj_property>
+      <obj_property name="ObjectShortName">trtp[11:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/twr">
+      <obj_property name="ElementShortName">twr[11:0]</obj_property>
+      <obj_property name="ObjectShortName">twr[11:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/twtr">
+      <obj_property name="ElementShortName">twtr[11:0]</obj_property>
+      <obj_property name="ObjectShortName">twtr[11:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/txp">
+      <obj_property name="ElementShortName">txp[11:0]</obj_property>
+      <obj_property name="ObjectShortName">txp[11:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/txpdll">
+      <obj_property name="ElementShortName">txpdll[11:0]</obj_property>
+      <obj_property name="ObjectShortName">txpdll[11:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/txpr">
+      <obj_property name="ElementShortName">txpr[11:0]</obj_property>
+      <obj_property name="ObjectShortName">txpr[11:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/txs">
+      <obj_property name="ElementShortName">txs[11:0]</obj_property>
+      <obj_property name="ObjectShortName">txs[11:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/txsdll">
+      <obj_property name="ElementShortName">txsdll[11:0]</obj_property>
+      <obj_property name="ObjectShortName">txsdll[11:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/tzqcs">
+      <obj_property name="ElementShortName">tzqcs[11:0]</obj_property>
+      <obj_property name="ObjectShortName">tzqcs[11:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/tzqoper">
+      <obj_property name="ElementShortName">tzqoper[11:0]</obj_property>
+      <obj_property name="ObjectShortName">tzqoper[11:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/wr">
+      <obj_property name="ElementShortName">wr[11:0]</obj_property>
+      <obj_property name="ObjectShortName">wr[11:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/mr_wr">
+      <obj_property name="ElementShortName">mr_wr[11:9]</obj_property>
+      <obj_property name="ObjectShortName">mr_wr[11:9]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/TCK_MIN">
+      <obj_property name="ElementShortName">TCK_MIN[31:0]</obj_property>
+      <obj_property name="ObjectShortName">TCK_MIN[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/TJIT_PER">
+      <obj_property name="ElementShortName">TJIT_PER[31:0]</obj_property>
+      <obj_property name="ObjectShortName">TJIT_PER[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/TJIT_CC">
+      <obj_property name="ElementShortName">TJIT_CC[31:0]</obj_property>
+      <obj_property name="ObjectShortName">TJIT_CC[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/TERR_2PER">
+      <obj_property name="ElementShortName">TERR_2PER[31:0]</obj_property>
+      <obj_property name="ObjectShortName">TERR_2PER[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/TERR_3PER">
+      <obj_property name="ElementShortName">TERR_3PER[31:0]</obj_property>
+      <obj_property name="ObjectShortName">TERR_3PER[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/TERR_4PER">
+      <obj_property name="ElementShortName">TERR_4PER[31:0]</obj_property>
+      <obj_property name="ObjectShortName">TERR_4PER[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/TERR_5PER">
+      <obj_property name="ElementShortName">TERR_5PER[31:0]</obj_property>
+      <obj_property name="ObjectShortName">TERR_5PER[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/TERR_6PER">
+      <obj_property name="ElementShortName">TERR_6PER[31:0]</obj_property>
+      <obj_property name="ObjectShortName">TERR_6PER[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/TERR_7PER">
+      <obj_property name="ElementShortName">TERR_7PER[31:0]</obj_property>
+      <obj_property name="ObjectShortName">TERR_7PER[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/TERR_8PER">
+      <obj_property name="ElementShortName">TERR_8PER[31:0]</obj_property>
+      <obj_property name="ObjectShortName">TERR_8PER[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/TERR_9PER">
+      <obj_property name="ElementShortName">TERR_9PER[31:0]</obj_property>
+      <obj_property name="ObjectShortName">TERR_9PER[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/TERR_10PER">
+      <obj_property name="ElementShortName">TERR_10PER[31:0]</obj_property>
+      <obj_property name="ObjectShortName">TERR_10PER[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/TERR_11PER">
+      <obj_property name="ElementShortName">TERR_11PER[31:0]</obj_property>
+      <obj_property name="ObjectShortName">TERR_11PER[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/TERR_12PER">
+      <obj_property name="ElementShortName">TERR_12PER[31:0]</obj_property>
+      <obj_property name="ObjectShortName">TERR_12PER[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/TDS">
+      <obj_property name="ElementShortName">TDS[31:0]</obj_property>
+      <obj_property name="ObjectShortName">TDS[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/TDH">
+      <obj_property name="ElementShortName">TDH[31:0]</obj_property>
+      <obj_property name="ObjectShortName">TDH[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/TDQSQ">
+      <obj_property name="ElementShortName">TDQSQ[31:0]</obj_property>
+      <obj_property name="ObjectShortName">TDQSQ[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/ddr3_sim/TDQSS">
+      <obj_property name="ElementShortName">TDQSS</obj_property>
+      <obj_property name="ObjectShortName">TDQSS</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/ddr3_sim/TDSS">
+      <obj_property name="ElementShortName">TDSS</obj_property>
+      <obj_property name="ObjectShortName">TDSS</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/ddr3_sim/TDSH">
+      <obj_property name="ElementShortName">TDSH</obj_property>
+      <obj_property name="ObjectShortName">TDSH</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/TDQSCK">
+      <obj_property name="ElementShortName">TDQSCK[31:0]</obj_property>
+      <obj_property name="ObjectShortName">TDQSCK[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/ddr3_sim/TQSH">
+      <obj_property name="ElementShortName">TQSH</obj_property>
+      <obj_property name="ObjectShortName">TQSH</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/ddr3_sim/TQSL">
+      <obj_property name="ElementShortName">TQSL</obj_property>
+      <obj_property name="ObjectShortName">TQSL</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/TDIPW">
+      <obj_property name="ElementShortName">TDIPW[31:0]</obj_property>
+      <obj_property name="ObjectShortName">TDIPW[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/TIPW">
+      <obj_property name="ElementShortName">TIPW[31:0]</obj_property>
+      <obj_property name="ObjectShortName">TIPW[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/TIS">
+      <obj_property name="ElementShortName">TIS[31:0]</obj_property>
+      <obj_property name="ObjectShortName">TIS[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/TIH">
+      <obj_property name="ElementShortName">TIH[31:0]</obj_property>
+      <obj_property name="ObjectShortName">TIH[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/TRAS_MIN">
+      <obj_property name="ElementShortName">TRAS_MIN[31:0]</obj_property>
+      <obj_property name="ObjectShortName">TRAS_MIN[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/TRC">
+      <obj_property name="ElementShortName">TRC[31:0]</obj_property>
+      <obj_property name="ObjectShortName">TRC[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/TRCD">
+      <obj_property name="ElementShortName">TRCD[31:0]</obj_property>
+      <obj_property name="ObjectShortName">TRCD[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/TRP">
+      <obj_property name="ElementShortName">TRP[31:0]</obj_property>
+      <obj_property name="ObjectShortName">TRP[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/TXP">
+      <obj_property name="ElementShortName">TXP[31:0]</obj_property>
+      <obj_property name="ObjectShortName">TXP[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/TCKE">
+      <obj_property name="ElementShortName">TCKE[31:0]</obj_property>
+      <obj_property name="ObjectShortName">TCKE[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/TAON">
+      <obj_property name="ElementShortName">TAON[31:0]</obj_property>
+      <obj_property name="ObjectShortName">TAON[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/TWLS">
+      <obj_property name="ElementShortName">TWLS[31:0]</obj_property>
+      <obj_property name="ObjectShortName">TWLS[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/TWLH">
+      <obj_property name="ElementShortName">TWLH[31:0]</obj_property>
+      <obj_property name="ObjectShortName">TWLH[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/TWLO">
+      <obj_property name="ElementShortName">TWLO[31:0]</obj_property>
+      <obj_property name="ObjectShortName">TWLO[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/TAA_MIN">
+      <obj_property name="ElementShortName">TAA_MIN[31:0]</obj_property>
+      <obj_property name="ObjectShortName">TAA_MIN[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/CL_TIME">
+      <obj_property name="ElementShortName">CL_TIME[31:0]</obj_property>
+      <obj_property name="ObjectShortName">CL_TIME[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/TDQSCK_DLLDIS">
+      <obj_property name="ElementShortName">TDQSCK_DLLDIS[31:0]</obj_property>
+      <obj_property name="ObjectShortName">TDQSCK_DLLDIS[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/TRRD">
+      <obj_property name="ElementShortName">TRRD[31:0]</obj_property>
+      <obj_property name="ObjectShortName">TRRD[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/TFAW">
+      <obj_property name="ElementShortName">TFAW[31:0]</obj_property>
+      <obj_property name="ObjectShortName">TFAW[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/CL_MIN">
+      <obj_property name="ElementShortName">CL_MIN[31:0]</obj_property>
+      <obj_property name="ObjectShortName">CL_MIN[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/CL_MAX">
+      <obj_property name="ElementShortName">CL_MAX[31:0]</obj_property>
+      <obj_property name="ObjectShortName">CL_MAX[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/AL_MIN">
+      <obj_property name="ElementShortName">AL_MIN[31:0]</obj_property>
+      <obj_property name="ObjectShortName">AL_MIN[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/AL_MAX">
+      <obj_property name="ElementShortName">AL_MAX[31:0]</obj_property>
+      <obj_property name="ObjectShortName">AL_MAX[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/WR_MIN">
+      <obj_property name="ElementShortName">WR_MIN[31:0]</obj_property>
+      <obj_property name="ObjectShortName">WR_MIN[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/WR_MAX">
+      <obj_property name="ElementShortName">WR_MAX[31:0]</obj_property>
+      <obj_property name="ObjectShortName">WR_MAX[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/BL_MIN">
+      <obj_property name="ElementShortName">BL_MIN[31:0]</obj_property>
+      <obj_property name="ObjectShortName">BL_MIN[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/BL_MAX">
+      <obj_property name="ElementShortName">BL_MAX[31:0]</obj_property>
+      <obj_property name="ObjectShortName">BL_MAX[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/CWL_MIN">
+      <obj_property name="ElementShortName">CWL_MIN[31:0]</obj_property>
+      <obj_property name="ObjectShortName">CWL_MIN[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/CWL_MAX">
+      <obj_property name="ElementShortName">CWL_MAX[31:0]</obj_property>
+      <obj_property name="ObjectShortName">CWL_MAX[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/TCK_MAX">
+      <obj_property name="ElementShortName">TCK_MAX[31:0]</obj_property>
+      <obj_property name="ObjectShortName">TCK_MAX[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/ddr3_sim/TCH_AVG_MIN">
+      <obj_property name="ElementShortName">TCH_AVG_MIN</obj_property>
+      <obj_property name="ObjectShortName">TCH_AVG_MIN</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/ddr3_sim/TCL_AVG_MIN">
+      <obj_property name="ElementShortName">TCL_AVG_MIN</obj_property>
+      <obj_property name="ObjectShortName">TCL_AVG_MIN</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/ddr3_sim/TCH_AVG_MAX">
+      <obj_property name="ElementShortName">TCH_AVG_MAX</obj_property>
+      <obj_property name="ObjectShortName">TCH_AVG_MAX</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/ddr3_sim/TCL_AVG_MAX">
+      <obj_property name="ElementShortName">TCL_AVG_MAX</obj_property>
+      <obj_property name="ObjectShortName">TCL_AVG_MAX</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/ddr3_sim/TCH_ABS_MIN">
+      <obj_property name="ElementShortName">TCH_ABS_MIN</obj_property>
+      <obj_property name="ObjectShortName">TCH_ABS_MIN</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/ddr3_sim/TCL_ABS_MIN">
+      <obj_property name="ElementShortName">TCL_ABS_MIN</obj_property>
+      <obj_property name="ObjectShortName">TCL_ABS_MIN</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/TCKE_TCK">
+      <obj_property name="ElementShortName">TCKE_TCK[31:0]</obj_property>
+      <obj_property name="ObjectShortName">TCKE_TCK[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/TAA_MAX">
+      <obj_property name="ElementShortName">TAA_MAX[31:0]</obj_property>
+      <obj_property name="ObjectShortName">TAA_MAX[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/ddr3_sim/TQH">
+      <obj_property name="ElementShortName">TQH</obj_property>
+      <obj_property name="ObjectShortName">TQH</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/ddr3_sim/TRPRE">
+      <obj_property name="ElementShortName">TRPRE</obj_property>
+      <obj_property name="ObjectShortName">TRPRE</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/ddr3_sim/TRPST">
+      <obj_property name="ElementShortName">TRPST</obj_property>
+      <obj_property name="ObjectShortName">TRPST</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/ddr3_sim/TDQSH">
+      <obj_property name="ElementShortName">TDQSH</obj_property>
+      <obj_property name="ObjectShortName">TDQSH</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/ddr3_sim/TDQSL">
+      <obj_property name="ElementShortName">TDQSL</obj_property>
+      <obj_property name="ObjectShortName">TDQSL</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/ddr3_sim/TWPRE">
+      <obj_property name="ElementShortName">TWPRE</obj_property>
+      <obj_property name="ObjectShortName">TWPRE</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/ddr3_sim/TWPST">
+      <obj_property name="ElementShortName">TWPST</obj_property>
+      <obj_property name="ObjectShortName">TWPST</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/TCCD">
+      <obj_property name="ElementShortName">TCCD[31:0]</obj_property>
+      <obj_property name="ObjectShortName">TCCD[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/TCCD_DG">
+      <obj_property name="ElementShortName">TCCD_DG[31:0]</obj_property>
+      <obj_property name="ObjectShortName">TCCD_DG[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/ddr3_sim/TRAS_MAX">
+      <obj_property name="ElementShortName">TRAS_MAX</obj_property>
+      <obj_property name="ObjectShortName">TRAS_MAX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/TWR">
+      <obj_property name="ElementShortName">TWR[31:0]</obj_property>
+      <obj_property name="ObjectShortName">TWR[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/TMRD">
+      <obj_property name="ElementShortName">TMRD[31:0]</obj_property>
+      <obj_property name="ObjectShortName">TMRD[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/TMOD">
+      <obj_property name="ElementShortName">TMOD[31:0]</obj_property>
+      <obj_property name="ObjectShortName">TMOD[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/TMOD_TCK">
+      <obj_property name="ElementShortName">TMOD_TCK[31:0]</obj_property>
+      <obj_property name="ObjectShortName">TMOD_TCK[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/TRRD_TCK">
+      <obj_property name="ElementShortName">TRRD_TCK[31:0]</obj_property>
+      <obj_property name="ObjectShortName">TRRD_TCK[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/TRRD_DG">
+      <obj_property name="ElementShortName">TRRD_DG[31:0]</obj_property>
+      <obj_property name="ObjectShortName">TRRD_DG[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/TRRD_DG_TCK">
+      <obj_property name="ElementShortName">TRRD_DG_TCK[31:0]</obj_property>
+      <obj_property name="ObjectShortName">TRRD_DG_TCK[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/TRTP">
+      <obj_property name="ElementShortName">TRTP[31:0]</obj_property>
+      <obj_property name="ObjectShortName">TRTP[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/TRTP_TCK">
+      <obj_property name="ElementShortName">TRTP_TCK[31:0]</obj_property>
+      <obj_property name="ObjectShortName">TRTP_TCK[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/TWTR">
+      <obj_property name="ElementShortName">TWTR[31:0]</obj_property>
+      <obj_property name="ObjectShortName">TWTR[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/TWTR_DG">
+      <obj_property name="ElementShortName">TWTR_DG[31:0]</obj_property>
+      <obj_property name="ObjectShortName">TWTR_DG[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/TWTR_TCK">
+      <obj_property name="ElementShortName">TWTR_TCK[31:0]</obj_property>
+      <obj_property name="ObjectShortName">TWTR_TCK[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/TWTR_DG_TCK">
+      <obj_property name="ElementShortName">TWTR_DG_TCK[31:0]</obj_property>
+      <obj_property name="ObjectShortName">TWTR_DG_TCK[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/TDLLK">
+      <obj_property name="ElementShortName">TDLLK[31:0]</obj_property>
+      <obj_property name="ObjectShortName">TDLLK[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/TRFC_MIN">
+      <obj_property name="ElementShortName">TRFC_MIN[31:0]</obj_property>
+      <obj_property name="ObjectShortName">TRFC_MIN[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/TRFC_MAX">
+      <obj_property name="ElementShortName">TRFC_MAX[31:0]</obj_property>
+      <obj_property name="ObjectShortName">TRFC_MAX[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/TXP_TCK">
+      <obj_property name="ElementShortName">TXP_TCK[31:0]</obj_property>
+      <obj_property name="ObjectShortName">TXP_TCK[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/TXPDLL">
+      <obj_property name="ElementShortName">TXPDLL[31:0]</obj_property>
+      <obj_property name="ObjectShortName">TXPDLL[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/TXPDLL_TCK">
+      <obj_property name="ElementShortName">TXPDLL_TCK[31:0]</obj_property>
+      <obj_property name="ObjectShortName">TXPDLL_TCK[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/TACTPDEN">
+      <obj_property name="ElementShortName">TACTPDEN[31:0]</obj_property>
+      <obj_property name="ObjectShortName">TACTPDEN[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/TPRPDEN">
+      <obj_property name="ElementShortName">TPRPDEN[31:0]</obj_property>
+      <obj_property name="ObjectShortName">TPRPDEN[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/TREFPDEN">
+      <obj_property name="ElementShortName">TREFPDEN[31:0]</obj_property>
+      <obj_property name="ObjectShortName">TREFPDEN[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/TCPDED">
+      <obj_property name="ElementShortName">TCPDED[31:0]</obj_property>
+      <obj_property name="ObjectShortName">TCPDED[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/TPD_MAX">
+      <obj_property name="ElementShortName">TPD_MAX[31:0]</obj_property>
+      <obj_property name="ObjectShortName">TPD_MAX[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/TXPR">
+      <obj_property name="ElementShortName">TXPR[31:0]</obj_property>
+      <obj_property name="ObjectShortName">TXPR[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/TXPR_TCK">
+      <obj_property name="ElementShortName">TXPR_TCK[31:0]</obj_property>
+      <obj_property name="ObjectShortName">TXPR_TCK[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/TXS">
+      <obj_property name="ElementShortName">TXS[31:0]</obj_property>
+      <obj_property name="ObjectShortName">TXS[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/TXS_TCK">
+      <obj_property name="ElementShortName">TXS_TCK[31:0]</obj_property>
+      <obj_property name="ObjectShortName">TXS_TCK[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/TXSDLL">
+      <obj_property name="ElementShortName">TXSDLL[31:0]</obj_property>
+      <obj_property name="ObjectShortName">TXSDLL[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/TISXR">
+      <obj_property name="ElementShortName">TISXR[31:0]</obj_property>
+      <obj_property name="ObjectShortName">TISXR[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/TCKSRE">
+      <obj_property name="ElementShortName">TCKSRE[31:0]</obj_property>
+      <obj_property name="ObjectShortName">TCKSRE[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/TCKSRE_TCK">
+      <obj_property name="ElementShortName">TCKSRE_TCK[31:0]</obj_property>
+      <obj_property name="ObjectShortName">TCKSRE_TCK[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/TCKSRX">
+      <obj_property name="ElementShortName">TCKSRX[31:0]</obj_property>
+      <obj_property name="ObjectShortName">TCKSRX[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/TCKSRX_TCK">
+      <obj_property name="ElementShortName">TCKSRX_TCK[31:0]</obj_property>
+      <obj_property name="ObjectShortName">TCKSRX_TCK[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/TCKESR_TCK">
+      <obj_property name="ElementShortName">TCKESR_TCK[31:0]</obj_property>
+      <obj_property name="ObjectShortName">TCKESR_TCK[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/ddr3_sim/TAOF">
+      <obj_property name="ElementShortName">TAOF</obj_property>
+      <obj_property name="ObjectShortName">TAOF</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/TAONPD">
+      <obj_property name="ElementShortName">TAONPD[31:0]</obj_property>
+      <obj_property name="ObjectShortName">TAONPD[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/TAOFPD">
+      <obj_property name="ElementShortName">TAOFPD[31:0]</obj_property>
+      <obj_property name="ObjectShortName">TAOFPD[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/ODTH4">
+      <obj_property name="ElementShortName">ODTH4[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ODTH4[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/ODTH8">
+      <obj_property name="ElementShortName">ODTH8[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ODTH8[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/ddr3_sim/TADC">
+      <obj_property name="ElementShortName">TADC</obj_property>
+      <obj_property name="ObjectShortName">TADC</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/TWLMRD">
+      <obj_property name="ElementShortName">TWLMRD[31:0]</obj_property>
+      <obj_property name="ObjectShortName">TWLMRD[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/TWLDQSEN">
+      <obj_property name="ElementShortName">TWLDQSEN[31:0]</obj_property>
+      <obj_property name="ObjectShortName">TWLDQSEN[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/TWLOE">
+      <obj_property name="ElementShortName">TWLOE[31:0]</obj_property>
+      <obj_property name="ObjectShortName">TWLOE[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/DM_BITS">
+      <obj_property name="ElementShortName">DM_BITS[31:0]</obj_property>
+      <obj_property name="ObjectShortName">DM_BITS[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/ADDR_BITS">
+      <obj_property name="ElementShortName">ADDR_BITS[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ADDR_BITS[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/ROW_BITS">
+      <obj_property name="ElementShortName">ROW_BITS[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ROW_BITS[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/COL_BITS">
+      <obj_property name="ElementShortName">COL_BITS[31:0]</obj_property>
+      <obj_property name="ObjectShortName">COL_BITS[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/DQ_BITS">
+      <obj_property name="ElementShortName">DQ_BITS[31:0]</obj_property>
+      <obj_property name="ObjectShortName">DQ_BITS[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/DQS_BITS">
+      <obj_property name="ElementShortName">DQS_BITS[31:0]</obj_property>
+      <obj_property name="ObjectShortName">DQS_BITS[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/BA_BITS">
+      <obj_property name="ElementShortName">BA_BITS[31:0]</obj_property>
+      <obj_property name="ObjectShortName">BA_BITS[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/MEM_BITS">
+      <obj_property name="ElementShortName">MEM_BITS[31:0]</obj_property>
+      <obj_property name="ObjectShortName">MEM_BITS[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/AP">
+      <obj_property name="ElementShortName">AP[31:0]</obj_property>
+      <obj_property name="ObjectShortName">AP[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/BC">
+      <obj_property name="ElementShortName">BC[31:0]</obj_property>
+      <obj_property name="ObjectShortName">BC[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/BL_BITS">
+      <obj_property name="ElementShortName">BL_BITS[31:0]</obj_property>
+      <obj_property name="ObjectShortName">BL_BITS[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/BO_BITS">
+      <obj_property name="ElementShortName">BO_BITS[31:0]</obj_property>
+      <obj_property name="ObjectShortName">BO_BITS[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/CS_BITS">
+      <obj_property name="ElementShortName">CS_BITS[31:0]</obj_property>
+      <obj_property name="ObjectShortName">CS_BITS[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/RANKS">
+      <obj_property name="ElementShortName">RANKS[31:0]</obj_property>
+      <obj_property name="ObjectShortName">RANKS[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/RZQ">
+      <obj_property name="ElementShortName">RZQ[31:0]</obj_property>
+      <obj_property name="ObjectShortName">RZQ[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/PRE_DEF_PAT">
+      <obj_property name="ElementShortName">PRE_DEF_PAT[7:0]</obj_property>
+      <obj_property name="ObjectShortName">PRE_DEF_PAT[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/STOP_ON_ERROR">
+      <obj_property name="ElementShortName">STOP_ON_ERROR[31:0]</obj_property>
+      <obj_property name="ObjectShortName">STOP_ON_ERROR[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/DEBUG">
+      <obj_property name="ElementShortName">DEBUG[31:0]</obj_property>
+      <obj_property name="ObjectShortName">DEBUG[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/BUS_DELAY">
+      <obj_property name="ElementShortName">BUS_DELAY[31:0]</obj_property>
+      <obj_property name="ObjectShortName">BUS_DELAY[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/RANDOM_OUT_DELAY">
+      <obj_property name="ElementShortName">RANDOM_OUT_DELAY[31:0]</obj_property>
+      <obj_property name="ObjectShortName">RANDOM_OUT_DELAY[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/RANDOM_SEED">
+      <obj_property name="ElementShortName">RANDOM_SEED[31:0]</obj_property>
+      <obj_property name="ObjectShortName">RANDOM_SEED[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/RDQSEN_PRE">
+      <obj_property name="ElementShortName">RDQSEN_PRE[31:0]</obj_property>
+      <obj_property name="ObjectShortName">RDQSEN_PRE[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/RDQSEN_PST">
+      <obj_property name="ElementShortName">RDQSEN_PST[31:0]</obj_property>
+      <obj_property name="ObjectShortName">RDQSEN_PST[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/RDQS_PRE">
+      <obj_property name="ElementShortName">RDQS_PRE[31:0]</obj_property>
+      <obj_property name="ObjectShortName">RDQS_PRE[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/RDQS_PST">
+      <obj_property name="ElementShortName">RDQS_PST[31:0]</obj_property>
+      <obj_property name="ObjectShortName">RDQS_PST[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/RDQEN_PRE">
+      <obj_property name="ElementShortName">RDQEN_PRE[31:0]</obj_property>
+      <obj_property name="ObjectShortName">RDQEN_PRE[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/RDQEN_PST">
+      <obj_property name="ElementShortName">RDQEN_PST[31:0]</obj_property>
+      <obj_property name="ObjectShortName">RDQEN_PST[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/WDQS_PRE">
+      <obj_property name="ElementShortName">WDQS_PRE[31:0]</obj_property>
+      <obj_property name="ObjectShortName">WDQS_PRE[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ddr3_sim/WDQS_PST">
+      <obj_property name="ElementShortName">WDQS_PST[31:0]</obj_property>
+      <obj_property name="ObjectShortName">WDQS_PST[31:0]</obj_property>
+   </wvobject>
+</wave_config>
